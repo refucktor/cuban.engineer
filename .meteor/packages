@@ -28,3 +28,4 @@ practicalmeteor:chai
 practicalmeteor:sinon
 practicalmeteor:mocha
 stolinski:stylus-multi
+materialize:materialize
