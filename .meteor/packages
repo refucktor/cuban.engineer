@@ -25,6 +25,8 @@ seba:minifiers-autoprefixer
 
 #accounts
 accounts-facebook
+accounts-google
+accounts-github
 service-configuration
 meteortoys:allthings
 email
