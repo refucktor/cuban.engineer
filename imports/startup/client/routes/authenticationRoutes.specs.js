@@ -39,7 +39,7 @@ describe('AuthenticationRoutes object', ()=>{
             it('render method  with correct params ', ()=>{
                 this.options.action();
                 sinon.assert.calledOnce(this.blazeLayout);
-                sinon.assert.calledWithExactly(this.blazeLayout, sinon.match('LoginPageLayout'));
+                sinon.assert.calledWithExactly(this.blazeLayout, sinon.match('LoginPage'));
             });
         });
     });
