@@ -19,7 +19,7 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 #ui
 fortawesome:fontawesome
 materialize:materialize
-stolinski:stylus-multi
+stylus
 fourseven:scss
 seba:minifiers-autoprefixer
 
