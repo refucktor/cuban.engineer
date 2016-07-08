@@ -1,67 +1,104 @@
-$big-col1-width= 1 / 12%;
-$big-col2-width= 2 / 12%;
-$big-col3-width= 3 / 12%;
-$big-col4-width= 4 / 12%;
-$big-col5-width= 5 / 12%;
-$big-col6-width= 6 / 12%;
-$big-col7-width= 7 / 12%;
-$big-col8-width= 8 / 12%;
-$big-col9-width= 9 / 12%;
-$big-col10-width= 10 / 12%;
-$big-col11-width= 11 / 12%;
-$big-col12-width= 12 / 12%;
+$big-col1-width= 1 / 12%
+$big-col2-width= 2 / 12%
+$big-col3-width= 3 / 12%
+$big-col4-width= 4 / 12%
+$big-col5-width= 5 / 12%
+$big-col6-width= 6 / 12%
+$big-col7-width= 7 / 12%
+$big-col8-width= 8 / 12%
+$big-col9-width= 9 / 12%
+$big-col10-width= 10 / 12%
+$big-col11-width= 11 / 12%
+$big-col12-width= 12 / 12%
 
-.auto-col-align {
-	margin-left auto;
-	left auto;
-	right auto;
-}
+$blue-link-text-color= #4183c4!important
 
-@font-face {
-	font-family 'Consolas', monospace;
-	src url(https//fonts.googleapis.com/css?family=Inconsolata)
-	src url("../../../public/font/Consolas/consola.ttf"), local('Consolas')
-}
+.auto-col-align
+    margin-left auto
+    left auto
+    right auto
+
+body
+    background url("../images/dot.png")
+
+@font-face
+    font-family 'Consolas', monospace
+    src url(https//fonts.googleapis.com/css?family=Inconsolata)
+    src url("../../../public/font/Consolas/consola.ttf"), local('Consolas')
+
 .ce-font
-	font-family Consolas !important
+    font-family Consolas !important
 
+.ce-blue
+    @extend .ce-font
+    color #4183c4!important
 @media only screen and (min-width 993px)
-	.row
-		.col.b1
-			@extend .auto-col-align
-			width $big-col1-width
-		.col.b2
-			@extend .auto-col-align
-			width $big-col2-width
-		.col.b3
-			@extend .auto-col-align
-			width $big-col3-width
-		.col.b4
-			@extend .auto-col-align
-			width $big-col4-width
-		.col.b5
-			@extend .auto-col-align
-			width $big-col5-width
-		.col.b6
-			@extend .auto-col-align
-			width $big-col6-width
-		.col.b7
-			@extend .auto-col-align
-			width $big-col7-width
-		.col.b8
-			@extend .auto-col-align
-			width $big-col8-width
-		.col.b9
-			@extend .auto-col-align
-			width $big-col9-width
-		.col.b10
-			@extend .auto-col-align
-			width $big-col10-width
-		.col.b11
-			@extend .auto-col-align
-			width $big-col11-width
-		.col.b12
-			@extend .auto-col-align
-			width $big-col12-width
+    .row
+        .col.b1
+            @extend .auto-col-align
+            width $big-col1-width
+        .col.b2
+            @extend .auto-col-align
+            width $big-col2-width
+        .col.b3
+            @extend .auto-col-align
+            width $big-col3-width
+        .col.b4
+            @extend .auto-col-align
+            width $big-col4-width
+        .col.b5
+            @extend .auto-col-align
+            width $big-col5-width
+        .col.b6
+            @extend .auto-col-align
+            width $big-col6-width
+        .col.b7
+            @extend .auto-col-align
+            width $big-col7-width
+        .col.b8
+            @extend .auto-col-align
+            width $big-col8-width
+        .col.b9
+            @extend .auto-col-align
+            width $big-col9-width
+        .col.b10
+            @extend .auto-col-align
+            width $big-col10-width
+        .col.b11
+            @extend .auto-col-align
+            width $big-col11-width
+        .col.b12
+            @extend .auto-col-align
+            width $big-col12-width
 
+.horizontal-divider
+    display table
+    white-space nowrap
+    height auto
+    overflow hidden
+    line-height 1
+    text-align center
+    margin 1rem 0
+    font-weight 700
+    text-transform uppercase
+    letter-spacing .05em
+    -webkit-user-select none
+    -moz-user-select none
+    -ms-user-select none
+    user-select none
+    -webkit-tap-highlight-color transparent
+    font-size 1rem
+    &:before
+        background-position right 1em top 50%
+    &:after
+        background-position left 1em top 50%
+    &:before
+    &:after
+        content ''
+        display table-cell
+        position relative
+        top 50%
+        width 50%
+        background-repeat no-repeat
+        background-image url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABaAAAAACCAYAAACuTHuKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1OThBRDY4OUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1OThBRDY4QUNDMTYxMUU0OUE3NUVGOEJDMzMzMjE2NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU5OEFENjg3Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU5OEFENjg4Q0MxNjExRTQ5QTc1RUY4QkMzMzMyMTY3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+VU513gAAADVJREFUeNrs0DENACAQBDBIWLGBJQby/mUcJn5sJXQmOQMAAAAAAJqt+2prAAAAAACg2xdgANk6BEVuJgyMAAAAAElFTkSuQmCC")
 
